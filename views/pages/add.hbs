@@ -1,14 +1,15 @@
-<div>
-    <form action="/finishAdd" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">  
-        <br>
-        <label for="description">Description</label>
-        <input type="text" name="description" id="description"> 
-        <br>
-        <label for="price">Price</label>
-        <input type="text" name="price" id="price">
-        <br>
-        <input type="submit" value="Add Product">
-    </form>
+<div class="container">
+    <div class="row">
+        <div class="col" style="padding: 50px;">
+            <form action="/finishAdd" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">  
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description"> 
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price">
+                <input type="submit" value="Add Product" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
 </div>

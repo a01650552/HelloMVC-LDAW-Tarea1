@@ -1,14 +1,16 @@
-<div>
-    <form action="/finishEdit" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" value="{{name}}">  
-        <br>
-        <label for="description">Description</label>
-        <input type="text" name="description" id="description" value="{{description}}"> 
-        <br>
-        <label for="price">Price</label>
-        <input type="text" name="price" id="price" value="{{price}}">
-        <br>
-        <input type="submit" value="Update">
-    </form>
+
+<div class="container">
+    <div class="row">
+        <div class="col" style="padding: 50px;;">
+            <form action="/finishEdit" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value="{{name}}"> 
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" value="{{description}}"> 
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price" value="{{price}}">
+                <input type="submit" value="Update" class="btn btn-primary">
+            </form>   
+        </div>
+    </div>
 </div>
