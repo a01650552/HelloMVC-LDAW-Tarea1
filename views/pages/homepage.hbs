@@ -1,0 +1,21 @@
+<h1>Hello MVC</h1>
+<p>This is my first page</p>
+<h2>Our products</h2>
+<table style="">
+    <tr>
+        <th>#</th>
+        <th>Product</th>
+        <th>Price</th>
+    </tr>
+    {{#each products}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>${{price}}</td>
+        <td><a href="show/{{id}}">Show</a></td>
+        <td><a href="edit/{{id}}">Edit</a></td>
+        <td><a href="/delete/{{id}}">Delete</a></td>
+    </tr>
+    {{/each}}
+</table>
+<a href="/add">Add a product</a>
